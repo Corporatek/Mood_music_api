@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  resources :playlists
   resources :songs
   resources :playlists, only: %i[index show update create]
   # RESTful routes
@@ -14,9 +13,11 @@ Rails.application.routes.draw do
   delete '/sign-out' => 'users#signout'
   patch '/change-password' => 'users#changepw'
 
-  post '/playlists' => 'playlists#create'
-  delete '/playlists' => 'playlists#delete'
+  post '/playlists/:id' => 'playlists#create'
+  patch '/playlists/:id' => 'playlists#update'
+  delete '/playlists/:id' => 'playlists#delete'
+  get '/playlists/:id' => 'playlists#index'
 
   post '/songs' => 'songs#create'
-  patch '/songs' => 'songs#udpate'
+  patch '/song/:id' => 'songs#update'
 end

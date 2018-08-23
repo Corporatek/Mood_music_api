@@ -10,7 +10,7 @@ class PlaylistsController < OpenReadController
 
   # GET /playlists/1
   def show
-    render json: @playlist
+    render json: @playlist.songs
   end
 
   # POST /playlists
