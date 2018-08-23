@@ -21,6 +21,14 @@ USER STORIES
 - As a user I can delete a playlist
 
 
+WIREFRAMES
+===
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/c02qy8C"><a href="//imgur.com/c02qy8C"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
+ERD's
+===
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/uIKWrVF"><a href="//imgur.com/uIKWrVF"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
 PROJECT REQUIREMENTS
 ===
 Host on your public Github page, not Github Enterprise.
@@ -41,3 +49,9 @@ REACT
 STRETCH GOALS
 ===
 Use a soundcloud or spotify api so users can play the song with the website.
+
+TERMINAL NOTES
+===
+-To check list of servers running use: `$ brew services list`
+-To stop a server from running use:`$ brew services stop postgresql`
+-To start a server use: `$ brew services start postgresql`

@@ -1,4 +1,4 @@
-class PlaylistsController < ApplicationController
+class PlaylistsController < OpenReadController
   before_action :set_playlist, only: [:show, :update, :destroy]
 
   # GET /playlists
@@ -46,6 +46,6 @@ class PlaylistsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def playlist_params
-      params.require(:playlist).permit(:title)
+      params.require(:playlist).permit(:name)
     end
 end
