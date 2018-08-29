@@ -1,4 +1,4 @@
-class PlaylistsController < OpenReadController
+class PlaylistsController < ApplicationController
   before_action :set_playlist, only: [:show, :update, :destroy]
 
   # GET /playlists
@@ -10,7 +10,7 @@ class PlaylistsController < OpenReadController
 
   # GET /playlists/1
   def show
-    render json: @playlist.songs
+    render json: @playlist
   end
 
   # POST /playlists

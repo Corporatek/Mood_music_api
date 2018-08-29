@@ -2,6 +2,7 @@
 
 Rails.application.routes.draw do
   resources :songs
+  resources :playlists
   resources :playlists, only: %i[index show update create]
   # RESTful routes
   resources :examples, except: %i[new edit]

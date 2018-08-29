@@ -6,7 +6,8 @@
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 # Thumbnails
 ._*
 # Files that might appear in the root of a volume
@@ -146,6 +147,6 @@ bower.json # same
 # Ignore Byebug command history file.
 .byebug_history
 
+.env
 # End of https://www.gitignore.io/api/rails
-.env
-.env
+

@@ -2,9 +2,10 @@ class CreateSongs < ActiveRecord::Migration[5.1]
   def change
     create_table :songs do |t|
       t.string :title
-      t.string :artist
       t.integer :bpm
+      t.string :artist
       t.string :url
+      t.references :playlist, foreign_key: true
 
       t.timestamps
     end
