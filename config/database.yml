@@ -9,6 +9,6 @@ development:
   <<: *default
   database: <%= project_name %>_development
 
-test:
+production:
   <<: *default
-  database: <%= project_name %>_test
+  database: <%= project_name %>_production

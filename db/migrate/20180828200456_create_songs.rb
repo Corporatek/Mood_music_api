@@ -5,7 +5,7 @@ class CreateSongs < ActiveRecord::Migration[5.1]
       t.integer :bpm
       t.string :artist
       t.string :url
-      t.references :playlist, foreign_key: true, index: true
+      t.references :playlist_id, foreign_key: true, index: true
 
       t.timestamps
     end
