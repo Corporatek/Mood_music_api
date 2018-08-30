@@ -27,7 +27,7 @@ class SongsController < ApplicationController
   # PATCH/PUT /songs/1
   def update
     if @song.update(song_params)
-      render json: @song, @song.save
+      render json: @song
     else
       render json: @song.errors, status: :unprocessable_entity
     end
